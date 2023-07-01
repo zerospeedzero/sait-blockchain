@@ -23,16 +23,13 @@ const NFTSalesInfo = ({price, tokenId}) => {
         <div className="flex space-x-4">
           <Web3Button
             contractAddress={marketAddress}
-            action={(contract) => {
-                contract.directListings.buyFromListing(tokenId, 1)
+            action={ async (contract) => {
+                const tx = await contract.directListings.buyFromListing(tokenId, 1)
               } 
             }
           >
             Buy Now
           </Web3Button>          
-          <button>
-            Make offer
-          </button>
         </div>
       </div>
     </div>

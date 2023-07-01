@@ -9,6 +9,9 @@ const NFTBasicInfo =({name}) => {
     { icon: <MdShare className="h-6 w-6 text-gray-500 dark:text-gray:400"/>},
     { icon: <MdMoreVert className="h-6 w-6 text-gray-500 dark:text-gray:400"/>},
   ]
+  const message = () => {
+    alert("This function is not implemented yet.")
+  }
   return (
     <div>
       <div className='flex items-center justify-between'>
@@ -17,7 +20,7 @@ const NFTBasicInfo =({name}) => {
         </div>
         <div className='flex divide-x divide-gray-300 rounded-lg border border-gray-300'>
           {actionItems.map((item, index) => (
-            <div key={index} className='flex cursor-pointer items-center justify-center p-3'>
+            <div key={index} className='flex cursor-pointer items-center justify-center p-3' onClick={message}>
               {item.icon}
             </div>
           ))}

@@ -14,7 +14,7 @@ export default function() {
   return (
     <>
       {address  
-        ?  <><Hero/></>
+        ?  <><Listings/></>
         : authenticating()
       }
     </>
