@@ -10,9 +10,12 @@ const NFTDetail = ({list}) => {
       content: list.asset.description
     },
     {
-      title: "Properties",
+      title: "NFT listing detail",
       icon: <BsFillBookmarkFill/>,
-      content: "assetContractAddress: " + list.assetContractAddress
+      // content: "assetContractAddress: " + list.assetContractAddress
+      content:  <pre>
+                  {JSON.stringify(list, null, 2) }
+                </pre>
     }
   ]
   return (

@@ -11,13 +11,13 @@ const Hero = () => {
               Discover, collect, and sell extraordinary NFTs
             </div>
             <div className="text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]">
-              This marketplace is created for SAIT NMPD.
+              This marketplace is created for SAIT NMPD students.
             </div>
             <div className="flex">
               <Link href="./listings/all"><button className="relative text-lg font-semibold px-12 py-4 bg-[#2181e2] rounded-lg mr-5 text-white hover:bg-[#42a0ff] cursor-pointer">Explore</button></Link>
             </div>
           </div>
-          <div className="w-1/3 rounded-[3rem]">
+          <div className="hidden md:block w-1/3 rounded-[3rem]">
             <img
               className="rounded-t-lg"
               src="nft-background.jpg"
@@ -31,7 +31,7 @@ const Hero = () => {
               />
               <div className="flex flex-col justify-center ml-4">
                 <div className="">George</div>
-                <Link href="./listing" className="text-[#1868b7]">
+                <Link href="./listings/all" className="text-[#1868b7]">
                   Explore
                 </Link>
               </div>
