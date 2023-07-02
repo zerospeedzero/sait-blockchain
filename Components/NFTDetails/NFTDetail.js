@@ -10,18 +10,17 @@ const NFTDetail = ({list}) => {
       content: list.asset.description
     },
     {
-      title: "NFT listing detail",
+      title: "NFT attributes",
       icon: <BsFillBookmarkFill/>,
       // content: "assetContractAddress: " + list.assetContractAddress
       content:  <pre>
-                  {JSON.stringify(list, null, 2) }
+                  {JSON.stringify(list.asset.attributes, null, 2) }
                 </pre>
     }
   ]
   return (
-    <div className='flex flex-col divide-y rounded-log overflow-hidden border dark:divide-black dark:border-black'>
+    <div className='flex flex-col divide-y rounded-lg overflow-hidden border dark:divide-black dark:border-black'>
       {dropdownData.map((item, index) => (
-        // <div>Dropdown</div>
         <Dropdown key={index} title={item.title} icon={item.icon} content={item.content}/>
       ))}
     </div>

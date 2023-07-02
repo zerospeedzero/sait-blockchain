@@ -20,26 +20,24 @@ const NFT = () => {
   const address = useAddress();
   if (!address) {router.push('/')}
   let list = getList(tokenID);
-
-  console.log(list)
   return (
-    <div className="h-[calc(100vh-6rem)] mx-auto flex max-w-2xl flex-col space-y-4 py-4 dark:bg-[#202226] lg:max-w-none lg:py-8 lg:px-24">
+    <div className="mx-auto flex max-w-2xl flex-col space-y-4 py-4 dark:bg-[#202226] lg:max-w-none lg:py-8 lg:px-24">
       {list.length == 0 ? (
         <div className="h-[calc(100vh-10rem)] flex flex-col items-center justify-center font-semibold text-gray-700">Loading a NFT listing</div>
       ) : (
-        <div className="flex flex-col lg:flex-row lg:space-x-4">
+        <div className="flex flex-col mx-auto lg:flex-row lg:space-x-4">
           <div>
             <div className="flex flex-col space-y-4">
               <NFTImage image = {list?.asset?.image}/>
             </div>
-            <div className="mt-4 rounded-lg">
+            <div className="mt-4 rounded-lg mb-8">
               <NFTDetail list={list}/>
             </div>
           </div>
           <div className="">
-            <NFTBasicInfo name={list?.asset?.name}/>
+            <NFTBasicInfo name={list?.asset?.name} list={list}/>
             <div className="">
-              <NFTSalesInfo price={list.currencyValuePerToken.displayValue} tokenId={list.tokenId}/>
+              <NFTSalesInfo price={list.currencyValuePerToken.displayValue} tokenId={list.tokenId} startTimeInSeconds={list?.startTimeInSeconds}/>
             </div>
           </div>
         </div>

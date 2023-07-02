@@ -21,7 +21,7 @@ const Dropdown = ({title, icon, content}) => {
           </Disclosure.Button>
           <Disclosure.Panel>
             <div className="bg-gray-50 p-4 dark:bg-[#313339]">
-                {content}
+              {content}
             </div>
           </Disclosure.Panel>
         </>

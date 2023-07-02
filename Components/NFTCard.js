@@ -3,11 +3,11 @@ import {AiOutlineHeart} from 'react-icons/ai'
 
 const NFTCard = ({listItem}) => {
   return (
-    <div className="relative flex h-[450px] w-[340px] cursor-pointer flex-col rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:bg-[#333333]">
+    <div className="relative flex h-[400px] w-[300px] cursor-pointer flex-col rounded-lg bg-white shadow-lg transition-all duration-300 hover:shadow-2xl ">
       <div className="h-3/4 overflow-hidden">
-        <Image className="rounded-t-lg object-cover" src={listItem.asset.image} height= {340} width={340} alt='nft'/>
+        <Image className="rounded-t-lg object-cover p-4" src={listItem.asset.image} height={340} width={340} alt='nft'/>
       </div>
-      <div className="flex h-1/4 flex-col justify-between p-4">
+      <div className="flex h-1/4 flex-col justify-between p-4 text-black">
         <div className="flex justify-between">
           <div>
             {listItem.asset.collection && (

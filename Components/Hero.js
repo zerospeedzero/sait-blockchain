@@ -7,10 +7,10 @@ const Hero = () => {
       <div className="before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('/nft-background.jpg')] before:bg-cover before:bg-center before:opacity-40">
         <div className="flex h-[calc(100vh-5rem)] relative justify-center flex-wrap items-center">
           <div className="w-1/2">
-            <div className="relative text-white text-[46px] font-semibold">
+            <div className="relative text-black/70 text-[46px] font-semibold">
               Discover, collect, and sell extraordinary NFTs
             </div>
-            <div className="text-[#8a939b] container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]">
+            <div className="text-black/60 container-[400px] text-2xl mt-[0.8rem] mb-[2.5rem]">
               This marketplace is created for SAIT NMPD students.
             </div>
             <div className="flex">
