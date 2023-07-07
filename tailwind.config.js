@@ -15,4 +15,5 @@ module.exports = {
     },
   },
   plugins: [],
+  enabled: process.env.NODE_ENV === "production",
 }

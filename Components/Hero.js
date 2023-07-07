@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('/nft-background.jpg')] before:bg-cover before:bg-center before:opacity-40">
+      <div className="before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('/nft-background.jpg')] before:bg-cover before:bg-center before:opacity-30">
         <div className="flex h-[calc(100vh-5rem)] relative justify-center flex-wrap items-center">
           <div className="w-1/2">
             <div className="relative text-black/70 text-[46px] font-semibold">
