@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Logo from '/public/SVG/logo.svg'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { useAddress, ConnectWallet } from "@thirdweb-dev/react";
-import {useRouter} from 'next/router';
+import {useRouter} from 'next/router'; 
 
 const Header = () => {
   const address = useAddress();
