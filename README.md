@@ -21,10 +21,6 @@ The website has employed technologies provided by Microsoft Azure Cloud.
 
 **Website link:** [https://gentle-field-08583d510.3.azurestaticapps.net/](https://gentle-field-08583d510.3.azurestaticapps.net/)
 
-**Video demo:** [/assets/projects/nft.mp4](/assets/projects/nft.mp4)
-
-**Source code:** [https://github.com/zerospeedzero/sait-blockchain.git](https://github.com/zerospeedzero/sait-blockchain.git)
-
 All work is done by George Cheng.
 
 _Note: You need to have a digital wallet on your computer in order to connect to the NFT Blockchain._
