@@ -10,8 +10,8 @@ export default function App({ Component, pageProps }) {
   <ThirdwebProvider
     activeChain={{
       ...Goerli,
-      rpc: ["https://goerli.infura.io/v3/19a6a39387da412c885d134c648d857b"]
     }}
+    clientId="574b8b1c3b1296056e275782ef78a67f"
   > 
     {/*<ThemeProvider>*/}
       <Header/>
