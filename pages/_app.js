@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
     activeChain={{
       ...Goerli,
     }}
-    clientId="574b8b1c3b1296056e275782ef78a67f"
+    clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
   > 
     {/*<ThemeProvider>*/}
       <Header/>
