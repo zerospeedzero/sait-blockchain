@@ -7,16 +7,14 @@ import Header from '@/Components/Header';
 
 export default function App({ Component, pageProps }) {
   return (
-  <ThirdwebProvider
-    activeChain={{
-      ...Goerli,
-    }}
-    clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
-  > 
-    {/*<ThemeProvider>*/}
+    <ThirdwebProvider
+      activeChain={{
+        ...Goerli,
+      }}
+      clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
+    > 
       <Header/>
       <Component {...pageProps} />
-    {/*</ThemeProvider> */}
-  </ThirdwebProvider>
+    </ThirdwebProvider>
   )
 }
